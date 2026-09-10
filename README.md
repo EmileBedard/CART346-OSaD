@@ -1,5 +1,5 @@
 # CART346-OSaD
-Emile Bedard. CART 346. fall 2026
+Emile Bedard. CART 346. fall 2026.
 
 ## One-Sound-a Day 
 
