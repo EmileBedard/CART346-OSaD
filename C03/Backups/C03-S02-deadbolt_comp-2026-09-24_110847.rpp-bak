@@ -1,0 +1,728 @@
+<REAPER_PROJECT 0.1 "7.79/win64" 1790262527 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 128
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48 0
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3198 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 0.05737536662094
+  ZOOM 278.86532047290086 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  RENDER_FMT 0 2 0
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    ZXZhdxgAAQ==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 0.16656519868798 0
+  SELECTION2 0.16656519868798 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_TRACKID {27E341C3-EAE2-4C8F-9357-D4C3424E951E}
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {FF675951-9AB6-418D-AC10-15D96D6D3F5D}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {A85EFFB9-469B-4259-825E-4B19A54D0F8F}
+    ACT 0 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  <PROJBAY
+  >
+  <TRACK {610BC302-D20C-456B-906D-D7414B06F02F}
+    NAME C02-S04-electronic-deadbolt
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {610BC302-D20C-456B-906D-D7414B06F02F}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AF227C37-B68A-4CD1-9E64-75E96C2FA6CA}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367987 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {74E446EE-26E4-4A63-B654-9CF38EFC8550}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.00875386409799
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {883E37B0-18F4-44E8-8CD8-07A6ED98A91B}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D7BFF7B9-6A96-478D-912C-A497D0CFA37D}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.02919071296102
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {25790C63-5151-4459-B333-D95989B89A6F}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {36DA7EBC-2A6D-473B-8C5A-FC1F5D031865}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.04962756194046
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {51CA6844-8319-4E3E-9021-9C25AB8AF6C3}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3C261C2B-73E7-4857-990A-24CC8CE7661D}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.0700644109199
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4A527883-9B1D-45A3-8835-2C665E0D0C3C}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B9966ED3-E4A5-4898-A2E4-18680450327C}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.09050125989935
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {51B8CCA6-C5C1-47C6-9BAB-DFECAFCBE57A}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {04698DED-51D1-4D4C-B75A-ABE288E0D79A}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.11093810876238
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {27ADA55C-3094-4732-B9C2-700F76311711}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {608E50EC-5D8E-4E96-9E5F-8ED8827531E6}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.15440254041797
+      SNAPOFFS 0
+      LENGTH 0.17830273753498
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {79E4169A-D00C-4110-A4C1-AF1E3ACA2477}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 2 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4017E77E-346F-47B6-B2D4-42179CA58EC6}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.42830162798392
+      SNAPOFFS 0
+      LENGTH 0.17830273753498
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5B17CCE6-7F60-49DA-8400-3C73E9E60E94}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 2 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {039F9063-CC30-4EB0-BCA6-BE436F6BD2BD}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.70220071543345
+      SNAPOFFS 0
+      LENGTH 0.17830273753498
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AB5424DD-50F0-4F0A-AE54-C018A7C628BD}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 2 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {55D1F71A-4FFE-4D67-8B98-EAA8909927EC}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.14033541159128
+      SNAPOFFS 0
+      LENGTH 0.43641862345689
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.33708027889805 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BE3DB7A6-4C16-4205-8C06-44FC5AE65C8F}
+      IID 98
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 3.126079 0 1 -1
+      SOFFS 2.56093206582522
+      PLAYRATE 0.36473066331786 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {ECC93E3A-E8E8-4084-8F85-C40CDA44B6F4}
+      <SOURCE SECTION
+        LENGTH 0.18236533165893
+        MODE 3
+        STARTPOS 0.27412635244908
+        OVERLAP 0.01
+        <SOURCE WAVE
+          FILE "Media\C02-S04-electronic-deadbolt.wav"
+        >
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.30102029121345
+      SNAPOFFS 0
+      LENGTH 0.02043684894573
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {44141C74-FDF6-4F5E-A732-6DF5C1F723CA}
+      IID 87
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367987 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {88C0EB38-8DB3-48ED-8224-182BF05E392E}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.30977415531145
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {844FB527-1013-4611-923D-F0DCCB85E74E}
+      IID 88
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {508DC121-7E3E-44C6-B6EE-1D5394DE927A}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.33021100417447
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2A6C2480-3EF6-4EF0-BE67-EF2DFAE4135B}
+      IID 89
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E1F6D03F-A7CD-41CB-944C-EC32DF698B01}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.35064785315392
+      SNAPOFFS 0
+      LENGTH 0.02043684894573
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {60DF3B9D-0CB7-4CC2-B72D-CADD313FAF43}
+      IID 90
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6C03E3A8-DCBB-4632-8212-6566566798CB}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.37108470213336
+      SNAPOFFS 0
+      LENGTH 0.02043684894573
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {96E1A065-8B7F-49DD-9882-B0EF47E00C77}
+      IID 91
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A73FDBDD-00E6-4F0C-87A1-D15383FDFCB6}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.3915215511128
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0E19A3BC-491B-4611-8AD8-A861A4170692}
+      IID 92
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6DE68A92-1AFA-4779-9CE4-00450CCF8244}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.41195839997583
+      SNAPOFFS 0
+      LENGTH 0.02043684894572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AB7797ED-3370-4B6A-95B9-BFBFEB7D4DB4}
+      IID 93
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 17.44914179367564 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F6588130-2ABE-4AE2-9A0B-EB84ABC05D45}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.45542283163143
+      SNAPOFFS 0
+      LENGTH 0.17830273753498
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FB523126-3304-4946-88BE-9E87DC2F5B7A}
+      IID 94
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 2 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A637E4CC-0C55-497A-99A7-D84833CBD8EF}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.72932191919738
+      SNAPOFFS 0
+      LENGTH 0.17830273753498
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {151A08DE-1029-4C25-A2D4-12304EB59C7B}
+      IID 95
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 2 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {265A78B1-A665-415E-A6C9-46EBAEA52C78}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 3.00322100664691
+      SNAPOFFS 0
+      LENGTH 0.17830273753498
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D533122D-62AB-4C6F-91AB-65450D28DB47}
+      IID 96
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.3184410203675
+      PLAYRATE 2 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DB5435CB-8FE9-4079-B788-9A060CC62127}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+  >
+  <TRACK {8E5CD69E-9BC0-41B9-AF1C-AC135A4B7985}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8E5CD69E-9BC0-41B9-AF1C-AC135A4B7985}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0.46622090640549
+      SNAPOFFS 0
+      LENGTH 1.78150612960137
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.27005145398351 0 1 0 0 0
+      FADEOUT 1 1.48852577858153 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5DCACF87-8E25-4CD1-BCA5-F4BD61ED375F}
+      IID 48
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 1.87702190812808
+      PLAYRATE 74.72496214293656 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AC92C73A-9B96-4C5E-B13C-A8395891298D}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.77608664479966
+      SNAPOFFS 0
+      LENGTH 1.78150612960138
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.27005145398351 0 1 0 0 0
+      FADEOUT 1 1.48852577858153 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5DF84B9D-870D-476F-8700-19F7C897011C}
+      IID 86
+      NAME C02-S04-electronic-deadbolt.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 1.87702190812808
+      PLAYRATE 74.72496214293656 0 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {81BB8F17-44EC-4E1F-BDD0-670B1C910B0D}
+      <SOURCE WAVE
+        FILE "C:\Users\emile\Desktop\fichiers emile\GitHub\cart346\CART346-OSaD\C02\C02-S04-electronic-deadbolt.wav"
+      >
+    >
+  >
+  <TRACK {507A0392-C258-497E-BCEF-E8C55E2B22C7}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {507A0392-C258-497E-BCEF-E8C55E2B22C7}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+  >
+  <TRACK {379DEF07-158F-452E-84BB-42E9BDB8F87E}
+    NAME C02-S04-electronic-deadbolt
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {379DEF07-158F-452E-84BB-42E9BDB8F87E}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+  >
+>
