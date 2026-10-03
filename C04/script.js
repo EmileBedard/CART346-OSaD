@@ -3,11 +3,11 @@
 // Paths are relative to this folder, e.g. 'C04-S01-my-sound.wav'.
 // ═══════════════════════════════════════════════════════════════════════════════
 const SOUNDS = [
-  'assets/1.wav',
-  'assets/2.wav',
-  'assets/3.wav',
-  'assets/4.wav',
-  'assets/5.wav',
+  'assets/C04-S01-rattling-spring.wav',
+  'assets/C04-S02-Vacuum-corrugated-tubing.wav',
+  'assets/C04-S03-shop-lamp_FAV.wav',
+  'assets/C04-S04-cincinnati.wav',
+  'assets/C04-S05-tropical-plant-stem.wav',
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -20,8 +20,8 @@ function themeColor(name) {
 function toggleTheme() {
   const dark = document.documentElement.dataset.theme !== 'dark';
   if (dark) document.documentElement.dataset.theme = 'dark';
-  else      delete document.documentElement.dataset.theme;
-  try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  else delete document.documentElement.dataset.theme;
+  try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) { }
   updateThemeBtn();
   drawSampleThumb();
   drawCircle();
@@ -35,23 +35,23 @@ function updateThemeBtn() {
 // ═══════════════════════════════════════════════════════════════════════════════
 // SHARED STATE
 // ═══════════════════════════════════════════════════════════════════════════════
-let audioCtx   = null;
+let audioCtx = null;
 let masterGain = null;
-const panners  = [null, null];
+const panners = [null, null];
 
-let isPlaying    = false;
+let isPlaying = false;
 let phasingPaused = false;
-let animFrame     = null;
-let startTime     = 0;
+let animFrame = null;
+let startTime = 0;
 
 let speedRatio = 1.01;
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // SAMPLE STATE
 // ═══════════════════════════════════════════════════════════════════════════════
-let sampleBuffer  = null;  // decoded AudioBuffer
+let sampleBuffer = null;  // decoded AudioBuffer
 let sampleSources = [null, null]; // AudioBufferSourceNode per voice
-let playheadPos   = [0, 0]; // loop position 0–1 per voice
+let playheadPos = [0, 0]; // loop position 0–1 per voice
 // Voice II's position is integrated across rate changes (pause/resume, ratio
 // slider) so the display matches what's heard: sample time v2Base at context
 // time v2BaseTime, advancing at v2Rate.
@@ -61,7 +61,7 @@ let v2Base = 0, v2BaseTime = 0, v2Rate = 1;
 // AUDIO INIT
 // ═══════════════════════════════════════════════════════════════════════════════
 function initAudio() {
-  audioCtx   = new (window.AudioContext || window.webkitAudioContext)();
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   masterGain = audioCtx.createGain();
   masterGain.gain.value = +document.getElementById('volCtrl').value;
   masterGain.connect(audioCtx.destination);
@@ -69,7 +69,7 @@ function initAudio() {
   panners[0] = audioCtx.createStereoPanner();
   panners[1] = audioCtx.createStereoPanner();
   panners[0].pan.value = -1;
-  panners[1].pan.value =  1;
+  panners[1].pan.value = 1;
   panners[0].connect(masterGain);
   panners[1].connect(masterGain);
 }
@@ -79,7 +79,7 @@ function initAudio() {
 // ═══════════════════════════════════════════════════════════════════════════════
 // Drag & drop
 const dropZone = document.getElementById('dropZone');
-dropZone.addEventListener('dragover',  e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
 dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
 dropZone.addEventListener('drop', e => {
   e.preventDefault();
@@ -118,7 +118,7 @@ async function loadSound(n) {
     const res = await fetch(encodeURI(file));
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     decodeSample(await res.arrayBuffer(), id);
-  } catch(err) {
+  } catch (err) {
     if (id !== loadId) return;
     setActiveSound(null);
     alert(`Could not load sound ${n}: ${err.message}` +
@@ -136,14 +136,14 @@ async function decodeSample(data, id) {
   try {
     // Most browsers can't decode AIFF natively, so parse it ourselves
     const buffer = isAiff(data) ? decodeAiff(data)
-                                : await audioCtx.decodeAudioData(data.slice(0));
+      : await audioCtx.decodeAudioData(data.slice(0));
     if (id !== loadId) return;
     sampleBuffer = buffer;
     document.getElementById('sampleDur').textContent =
       sampleBuffer.duration.toFixed(2) + 's';
     drawSampleThumb();
     drawCircle();
-  } catch(err) {
+  } catch (err) {
     if (id !== loadId) return;
     alert('Could not decode audio file: ' + err.message);
   }
@@ -158,26 +158,26 @@ function isAiff(buf) {
 
 // 80-bit IEEE 754 extended float (big-endian), used for the sample rate
 function readExtended(dv, o) {
-  const exp  = dv.getUint16(o) & 0x7fff;
-  const hi   = dv.getUint32(o + 2);
-  const lo   = dv.getUint32(o + 6);
+  const exp = dv.getUint16(o) & 0x7fff;
+  const hi = dv.getUint32(o + 2);
+  const lo = dv.getUint32(o + 6);
   if (exp === 0 && hi === 0 && lo === 0) return 0;
   return (hi * 2 ** -31 + lo * 2 ** -63) * 2 ** (exp - 16383);
 }
 
 function decodeAiff(buf) {
-  const dv   = new DataView(buf);
-  const tag  = (o) => String.fromCharCode(dv.getUint8(o), dv.getUint8(o + 1), dv.getUint8(o + 2), dv.getUint8(o + 3));
+  const dv = new DataView(buf);
+  const tag = (o) => String.fromCharCode(dv.getUint8(o), dv.getUint8(o + 1), dv.getUint8(o + 2), dv.getUint8(o + 3));
   const aifc = tag(8) === 'AIFC';
   let channels, frames, bits, rate, comp = 'NONE', ssnd = -1;
 
-  for (let o = 12; o + 8 <= buf.byteLength; ) {
+  for (let o = 12; o + 8 <= buf.byteLength;) {
     const id = tag(o), size = dv.getUint32(o + 4), body = o + 8;
     if (id === 'COMM') {
       channels = dv.getInt16(body);
-      frames   = dv.getUint32(body + 2);
-      bits     = dv.getInt16(body + 6);
-      rate     = readExtended(dv, body + 8);
+      frames = dv.getUint32(body + 2);
+      bits = dv.getInt16(body + 6);
+      rate = readExtended(dv, body + 8);
       if (aifc) comp = tag(body + 18);
     } else if (id === 'SSND') {
       ssnd = body + 8 + dv.getUint32(body); // skip offset + blockSize fields
@@ -187,7 +187,7 @@ function decodeAiff(buf) {
   if (!channels || ssnd < 0) throw new Error('Invalid AIFF file');
 
   const little = comp === 'sowt';
-  const float  = comp === 'fl32' || comp === 'FL32' || comp === 'fl64' || comp === 'FL64';
+  const float = comp === 'fl32' || comp === 'FL32' || comp === 'fl64' || comp === 'FL64';
   if (!['NONE', 'sowt', 'fl32', 'FL32', 'fl64', 'FL64'].includes(comp))
     throw new Error(`Unsupported AIFF-C compression "${comp}"`);
   if (comp.toLowerCase() === 'fl64') bits = 64;
@@ -195,15 +195,15 @@ function decodeAiff(buf) {
 
   const bytes = Math.ceil(bits / 8);
   frames = Math.min(frames, Math.floor((buf.byteLength - ssnd) / (bytes * channels)));
-  const out  = audioCtx.createBuffer(channels, frames, rate);
-  const chs  = Array.from({ length: channels }, (_, c) => out.getChannelData(c));
+  const out = audioCtx.createBuffer(channels, frames, rate);
+  const chs = Array.from({ length: channels }, (_, c) => out.getChannelData(c));
   const norm = 2 ** (bytes * 8 - 1);
 
   let p = ssnd;
   for (let i = 0; i < frames; i++) {
     for (let c = 0; c < channels; c++, p += bytes) {
       let v;
-      if (float)            v = bytes === 8 ? dv.getFloat64(p, little) : dv.getFloat32(p, little);
+      if (float) v = bytes === 8 ? dv.getFloat64(p, little) : dv.getFloat32(p, little);
       else if (bytes === 1) v = dv.getInt8(p) / norm;
       else if (bytes === 2) v = dv.getInt16(p, little) / norm;
       else if (bytes === 4) v = dv.getInt32(p, little) / norm;
@@ -224,7 +224,7 @@ function drawSampleThumb() {
   const canvas = document.getElementById('sampleWaveThumb');
   const dpr = window.devicePixelRatio || 1;
   const r = canvas.getBoundingClientRect();
-  canvas.width  = r.width  * dpr;
+  canvas.width = r.width * dpr;
   canvas.height = r.height * dpr;
   const ctx2 = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height;
@@ -257,12 +257,12 @@ function startSample() {
   v2Base = 0; v2BaseTime = t; v2Rate = speedRatio;
 
   // Stop any existing sources
-  sampleSources.forEach(s => { if (s) try { s.stop(); } catch(e){} });
+  sampleSources.forEach(s => { if (s) try { s.stop(); } catch (e) { } });
 
   for (let v = 0; v < 2; v++) {
     const src = audioCtx.createBufferSource();
     src.buffer = sampleBuffer;
-    src.loop   = true;
+    src.loop = true;
     // Voice I plays at rate 1.0; Voice II at speedRatio (slightly faster → drifts ahead)
     src.playbackRate.value = v === 0 ? 1.0 : speedRatio;
     src.connect(panners[v]);
@@ -273,7 +273,7 @@ function startSample() {
 
 function stopSample() {
   sampleSources.forEach((s, i) => {
-    if (s) { try { s.stop(); } catch(e){} sampleSources[i] = null; }
+    if (s) { try { s.stop(); } catch (e) { } sampleSources[i] = null; }
   });
 }
 
@@ -286,9 +286,9 @@ function applySampleRate() {
 
 function setVoice2Rate(rate) {
   const now = audioCtx.currentTime;
-  v2Base     = v2Base + Math.max(0, now - v2BaseTime) * v2Rate;
+  v2Base = v2Base + Math.max(0, now - v2BaseTime) * v2Rate;
   v2BaseTime = Math.max(now, v2BaseTime);
-  v2Rate     = rate;
+  v2Rate = rate;
   sampleSources[1].playbackRate.value = rate;
 }
 
@@ -296,9 +296,9 @@ function setVoice2Rate(rate) {
 function updatePlayheads() {
   if (!sampleBuffer || !audioCtx) return;
   const elapsed = audioCtx.currentTime - startTime;
-  const bufDur  = sampleBuffer.duration;
-  const now     = audioCtx.currentTime;
-  const v2Time  = v2Base + Math.max(0, now - v2BaseTime) * v2Rate;
+  const bufDur = sampleBuffer.duration;
+  const now = audioCtx.currentTime;
+  const v2Time = v2Base + Math.max(0, now - v2BaseTime) * v2Rate;
   playheadPos = [
     (Math.max(0, elapsed) % bufDur) / bufDur,
     (v2Time % bufDur) / bufDur,
@@ -311,16 +311,16 @@ function updatePlayheads() {
 function drawCircle() {
   const canvas = document.getElementById('playheadCircle');
   const dpr = window.devicePixelRatio || 1;
-  const r0  = canvas.getBoundingClientRect();
+  const r0 = canvas.getBoundingClientRect();
   if (!r0.width) return;
   if (canvas.width !== Math.round(r0.width * dpr) || canvas.height !== Math.round(r0.height * dpr)) {
-    canvas.width  = Math.round(r0.width  * dpr);
+    canvas.width = Math.round(r0.width * dpr);
     canvas.height = Math.round(r0.height * dpr);
   }
-  const c  = canvas.getContext('2d');
-  const W  = canvas.width, H = canvas.height;
+  const c = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
   const cx = W / 2, cy = H / 2;
-  const R  = Math.min(W, H) / 2 - 8 * dpr;     // ring radius (room for the dots)
+  const R = Math.min(W, H) / 2 - 8 * dpr;     // ring radius (room for the dots)
   const ang = p => -Math.PI / 2 + p * Math.PI * 2;
   c.clearRect(0, 0, W, H);
 
