@@ -2,7 +2,7 @@
 
 An interactive browser-based exploration of Steve Reich's phasing technique, inspired by *It's Gonna Rain* (1965).
 
-## Concept
+## Concept  
 
 *It's Gonna Rain* is a landmark work of early minimalism. Reich recorded a street preacher in San Francisco and discovered — by accident — that two tape loops of the same recording, played simultaneously on slightly out-of-sync machines, drifted apart and realigned in ways that produced hypnotic rhythmic and harmonic interference patterns. This became the defining technique of **phase music**: two identical loops, one running marginally faster than the other, continuously shifting in and out of alignment.
 
