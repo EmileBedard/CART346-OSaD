@@ -1,5 +1,5 @@
 # CART346-OSaD
-Emile Bedard. CART 346. fall 2026.
+Emile Bedard. CART 346. fall 2026.  
 
 - [Keynotes—Record something you would normally ignore](./C01)
 - [Signals—Record something you can't ignore](./C02)
