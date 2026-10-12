@@ -1,5 +1,5 @@
 Sources for Class 5 OSaD:
-## Stochastic Rythms
+## Stochastic Rythms  
 Emile Bedard. CART346. Fall2026
 
  Rythm1: **steadyKick** *On 8 times*
