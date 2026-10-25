@@ -21,7 +21,7 @@ Rythm2: **check-1,2?** *On 8 times*
 > **for kick:**  <audio controls preload="none" src="sounds\Kick 606 1.wav" style="height: 25px;"></audio><br>
 
 Rythm3 **bottlesTrio** *On 8 times*
- <audio controls preload="none" src="rendered-rythms\C05-S03-bottlesTrio.wav" style="height: 35px; filter: invert(100%);"></audio><br>
+ <audio controls preload="none" src="rendered-rythms\C05-S03-bottlesTrio_FAV.wav" style="height: 35px; filter: invert(100%);"></audio><br>
  ---
  **SAME SOUND BUT PITCHED DIFFERENTLY !**
 > Sources:<br>

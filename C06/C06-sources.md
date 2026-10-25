@@ -39,26 +39,27 @@ Rythm3: **changingPitch**
 > - toc-002.wav
 
 
-Rythm4: **Aspiration**
- <audio controls preload="none" src="C06-S01-aspiration.wav" style="height: 35px; filter: invert(100%);"></audio><br>
+Rythm4: **Synchronized**
+ <audio controls preload="none" src="C06-S04-Synchronized.wav" style="height: 35px; filter: invert(100%);"></audio><br>
  ---
-  I tried experimenting with simplicity and silence here. i used a fan noise from my oven and the oven door long squeeck to build the background. As for the repetitive rythm; I used the provided kick and snare with randomness
+I leaned back towards a more musical approach here with synchronized. edited a sound recorded in week 2 for the "flute", it came from my electronic door deadbolt.
 > Sources:
 > #### Provided sounds
 > - Kick 606 1.wav 
-> - Rim 7t8.wav
+> - ClosedHH 1.wav
 > #### My own sounds from c02
-> - C02-S01-oven-door.wav
-> - C02-S03-fan.wav
+> - echo.wav
+> - C02-S04-electronic deadbolt.wav edited to become --> beep-lowpitch-isolated.wav
 
-Rythm5: **Aspiration**
- <audio controls preload="none" src="C06-S01-aspiration.wav" style="height: 35px; filter: invert(100%);"></audio><br>
+Rythm5: **deepOrgan**
+ <audio controls preload="none" src="C06-S05-deepOrgan.wav" style="height: 35px; filter: invert(100%);"></audio><br>
  ---
-  I tried experimenting with simplicity and silence here. i used a fan noise from my oven and the oven door long squeeck to build the background. As for the repetitive rythm; I used the provided kick and snare with randomness
+  Darker and solwer atmosphere here. experimented with the Halloween theme
 > Sources:
 > #### Provided sounds
-> - Kick 606 1.wav 
-> - Rim 7t8.wav
+> - none
 > #### My own sounds from c02
-> - C02-S01-oven-door.wav
-> - C02-S03-fan.wav
+> - C02-S04-electronic deadbolt.wav edited to become --> beep-lowpitch-isolated.wav
+> - C04-S05-tropical-plant-stem.wav
+> - C04-S02-Vacuum-corrugated-tubing
+
