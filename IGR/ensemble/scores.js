@@ -63,29 +63,29 @@ const SCORES = [
     groups: 4,
     events: [
       // Sound 1 in A, B and C: each group spreads slowly, groups stay together
-      { at: '0:00', groups: 'AB',  play: 'demo/1', ratio: 1.01, fade: 5 },
+      { at: '0:00', groups: 'AB', play: 'demo/1', ratio: 1.01, fade: 5 },
       // The groups start drifting against each other too
       { at: '0:30', spread: 1.04, glide: 30 },
       // At 2:00 sound 2 fades in on D over a minute…
-      { at: '1:00', groups: 'C',    play: 'demo/3', ratio: 1.010, fade: 60 },
-      { at: '1:00', groups: 'D',    play: 'demo/5', ratio: 1.020, fade: 60 },
+      { at: '1:00', groups: 'C', play: 'demo/3', ratio: 1.010, fade: 60 },
+      { at: '1:00', groups: 'D', play: 'demo/5', ratio: 1.020, fade: 60 },
       // …while A, B, C crossfade from sound 1 to sound 2 over the same minute
-      { at: '1:15', groups: 'AB',  stop: 'demo/1', fade: 60 },
-      { at: '2:15', groups: 'A',  play: 'demo/5', ratio: 1.004, fade: 60 },
+      { at: '1:15', groups: 'AB', stop: 'demo/1', fade: 60 },
+      { at: '2:15', groups: 'A', play: 'demo/5', ratio: 1.004, fade: 60 },
       // Everyone accelerates inside their group, then everything freezes
-      { at: '3:00', groups: 'all',  ratio: 1.03, glide: 20 },
-      { at: '4:00', groups: 'all',  ratio: 1.000, glide: 30 },
+      { at: '3:00', groups: 'all', ratio: 1.03, glide: 20 },
+      { at: '4:00', groups: 'all', ratio: 1.000, glide: 30 },
       { at: '5:00', spread: 1.000, glide: 30 },
       // Sound 3 enters on A and C only, frozen
-      { at: '5:30', groups: 'AC',   play: 'demo/3', fade: 10, level: 0.8 },
-      { at: '6:00', groups: 'all',  stop: 'all', fade: 20 },
+      { at: '5:30', groups: 'AC', play: 'demo/3', fade: 10, level: 0.8 },
+      { at: '6:00', groups: 'all', stop: 'all', fade: 20 },
     ],
     end: '6:20',
   },
 
   {
     title: 'Three groups (2 min)',
-    credit: "All recordings by Gabriel Vigliensoni.",  
+    credit: "All recordings by Gabriel Vigliensoni.",
     groups: 3,
     events: [
       // Both groups in unison, then only the groups drift apart…
@@ -107,7 +107,7 @@ const SCORES = [
     events: [
       { at: '0:00', groups: 'AB', play: 'demo/1', ratio: 1.01, fade: 2 },
       { at: '0:10', spread: 1.005 },
-      { at: '0:15', groups: 'C',  play: 'demo/2', ratio: 1.02, fade: 10 },
+      { at: '0:15', groups: 'C', play: 'demo/2', ratio: 1.02, fade: 10 },
       { at: '0:30', groups: 'AB', stop: 'demo/1', fade: 10 },
       { at: '0:30', groups: 'AB', play: 'demo/4', ratio: 1.005, fade: 10 },
       { at: '0:45', groups: 'all', ratio: 1.0, glide: 5 },
@@ -120,25 +120,25 @@ const SCORES = [
     credit: "All recordings by Gabriel Vigliensoni.",
     groups: 2,
     events: [
-      { at: '0:00', groups: 'A', play: 'demo/C03-S01-repeater.mp3', ratio: 1.0},
+      { at: '0:00', groups: 'A', play: 'demo/C03-S01-repeater.mp3', ratio: 1.0 },
       { at: '0:05', ratio: 1.01, glide: 30 },
       { at: '0:05', groups: 'B', play: 'demo/C03-S01-repeater.mp3', ratio: 1.02, fade: 10 },
-      { at: '0:25', ratio: 1.05, glide: 30},
+      { at: '0:25', ratio: 1.05, glide: 30 },
       { at: '5:00', groups: 'all', stop: 'all', fade: 5 },
     ],
-  },  
+  },
 
   {
     title: 'Multitrack test spread 1.005 ratio 1.01',
     credit: "All recordings by Gabriel Vigliensoni.",
     groups: 4,
     events: [
-      { at: '0:00', groups: 'A', play: 'demo/multitrack-test/a', ratio: 1.01},
+      { at: '0:00', groups: 'A', play: 'demo/multitrack-test/a', ratio: 1.01 },
       { at: '0:00', spread: 1.005 },
-      { at: '0:00', groups: 'B', play: 'demo/multitrack-test/b', ratio: 1.0},
-      { at: '0:00', groups: 'C', play: 'demo/multitrack-test/c', ratio: 1.0},
-      { at: '0:00', groups: 'D', play: 'demo/multitrack-test/d', ratio: 1.0},
+      { at: '0:00', groups: 'B', play: 'demo/multitrack-test/b', ratio: 1.0 },
+      { at: '0:00', groups: 'C', play: 'demo/multitrack-test/c', ratio: 1.0 },
+      { at: '0:00', groups: 'D', play: 'demo/multitrack-test/d', ratio: 1.0 },
       { at: '5:00', groups: 'all', stop: 'all', fade: 1 },
     ],
-  },   
+  },
 ];
