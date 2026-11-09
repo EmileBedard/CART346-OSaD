@@ -1,6 +1,6 @@
 # Phase Study
 
-An interactive browser-based exploration of Steve Reich's phasing technique, inspired by *It's Gonna Rain* (1965). 
+An interactive browser-based exploration of Steve Reich's phasing technique, inspired by *It's Gonna Rain* (1965).    
 
 ## Concept
 
