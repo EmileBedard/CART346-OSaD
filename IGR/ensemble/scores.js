@@ -109,7 +109,7 @@ const SCORES = [
       { at: '0:00', groups: 'A', play: 'emilebedard/C09-S01-daftpunkish', ratio: 1., fade: 30 },
       { at: '0:20', groups: 'B', play: 'emilebedard/C09-S02-thump', ratio: 1.01, fade: 3 },
 
-      { at: '0:45', groups: 'A', ratio: 1.04, glide: 20 },
+      { at: '0:45', groups: 'A', ratio: 1.06, glide: 20 },
 
       { at: '0:45', groups: 'A', stop: 'emilebedard/C09-S01-daftpunkish', fade: 30 },
       { at: '0:45', groups: 'B', stop: 'emilebedard/C09-S02-thump', fade: 30 },
@@ -117,15 +117,9 @@ const SCORES = [
 
       { at: '0:30', groups: 'C', play: 'emilebedard/C09-S03-melodic_FAV', ratio: 1.01, fade: 20 },
       { at: '1:00', groups: 'D', play: 'emilebedard/C09-S04-steadybuzz', ratio: 1., fade: 20, level: 0.2 },
-      { at: '1:20', groups: 'A', play: 'emilebedard/C09-S05-blingbling', ratio: 1.03, fade: 20 },
+      { at: '1:20', groups: 'A', play: 'emilebedard/C09-S05-blingbling', ratio: 1.03, fade: 20, glide: 30 },
 
       { at: '1:20', groups: 'D', level: 0.1, fade: 10 },
-
-
-
-
-
-
 
       { at: '1:40', groups: 'all', stop: 'all', fade: 20 },
     ],
