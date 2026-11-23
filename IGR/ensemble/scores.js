@@ -149,7 +149,7 @@ const SCORES = [
       { at: '2:20', groups: 'all', sound: 'emilebedard/C10-S01-babyCry', fade: 30, level: 0 },
 
 
-      { at: '2:30', groups: 'BD', play: 'emilebedard/C10-S05-bloodvessels', spread: 1.05, loop: false, ratio: 0.70, level: 0.4, fade: 10 },
+      { at: '2:30', groups: 'BD', play: 'emilebedard/C10-S05-bloodVessels', spread: 1.05, loop: false, ratio: 0.70, level: 0.4, fade: 10 },
 
 
     ],
