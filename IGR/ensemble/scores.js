@@ -126,6 +126,36 @@ const SCORES = [
     end: '2:00'
   },
 
+  {
+    title: 'C10 · Birth',
+    credit: 'Émile Bédard',
+    groups: 4,
+    events: [
+      { at: '0:00', groups: 'all', play: 'emilebedard/C10-S02-doppler', ratio: 1.0, fade: 20, level: 0.5 },
+      { at: '0:20', groups: 'all', sound: 'emilebedard/C10-S02-doppler', fade: 40, level: 0.2 },
+      { at: '0:40', groups: 'A', play: 'emilebedard/C10-S01-babyCry', loop: false, ratio: 1.00 },
+      { at: '0:55', groups: 'C', play: 'emilebedard/C10-S01-babyCry', loop: false, ratio: 1.20 },
+      { at: '1:00', groups: 'B', play: 'emilebedard/C10-S01-babyCry', loop: false, ratio: 0.6 },
+
+      { at: '1:15', groups: 'all', stop: 'all' },
+
+      { at: '1:16', groups: 'AB', play: 'emilebedard/C10-S03-daboBabbling', spread: 1.04, glide: 20 },
+      { at: '1:20', groups: 'CD', play: 'emilebedard/C10-S04-organs', spread: 1.04, fade: 30, level: 0.4 },
+      { at: '1:40', groups: 'AB', spread: 1.03 },
+
+      { at: '2:10', groups: 'all', stop: 'all', },
+
+      { at: '2:13', groups: 'all', play: 'emilebedard/C10-S01-babyCry', ratio: 1.2, spread: 1.05, glide: 10, },
+      { at: '2:20', groups: 'all', sound: 'emilebedard/C10-S01-babyCry', fade: 30, level: 0 },
+
+
+      { at: '2:30', groups: 'BD', play: 'emilebedard/C10-S05-bloodvessels', spread: 1.05, loop: false, ratio: 0.70, level: 0.4, fade: 10 },
+
+
+    ],
+    end: '2:50'
+  },
+
 
   {
     title: 'Rain Study I',
